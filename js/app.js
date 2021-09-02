@@ -22,8 +22,20 @@ const cartas = [naruto, batman];
 
 function SortearCarta(){
     const numeroDeCartas = 2;
-    const numeroCartaJogador = parseInt(Math.random()*numeroDeCartas);
-    const numeroCartaComputador = parseInt(Math.random()*numeroDeCartas);
-    console.log(numeroCartaJogador , numeroCartaComputador)
+    let numeroCartaJogador = parseInt(Math.random()*numeroDeCartas);
+    let numeroCartaComputador = parseInt(Math.random()*numeroDeCartas);
+    
+    // Laço para não repetir as cartas entres os competidores
+    while (numeroCartaJogador == numeroCartaComputador){
+        numeroCartaJogador = parseInt(Math.random()*numeroDeCartas);
+    }
+    const cartaJogador = cartas[numeroCartaJogador];
+    const cartaComputador = cartas[numeroCartaComputador];
+    console.log(cartaJogador , cartaComputador);
 }
-SortearCarta();
+
+const btnSortear = document.querySelector("#btnSortear").onclick = () => {
+    SortearCarta();
+};
+
+
