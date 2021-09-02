@@ -1,7 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&family=MedievalSharp&display=swap');
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    
+}
+body {
+    min-height:854px;
+    background-image: url('../img/super-trunfo-bg.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-bottom: 20vh;
+    color: #fff;
+    
 }
 
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+
+h1 {
+    font-family: 'MedievalSharp', cursive;
+    color: #802626;
+    font-size: 50px;
+    margin: 30px;
+}
+
+h2 {
+    letter-spacing: 1px;
+    margin: 30px;
+    color: #4d2d2d
+}
+
+button, .btn-jogar {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding:0.8em 1.5em;
+    color: aliceblue;
+    background-color: #4b131c;
+    border: none;
+    border-radius:5px;
+    margin-top:15px
+}
+
+
+.area {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+#carta-jogador,
+#carta-computador {
+    width: 360px;
+    height:500px;
+    border-radius:10px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#carta-jogador img,
+#carta-computador img {
+    width: inherit;
+    height: inherit;
+}
