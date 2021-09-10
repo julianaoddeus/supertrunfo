@@ -80,12 +80,14 @@ h3 {
 
 }
 
-.nome-personagem-jogador {
+.nome-personagem-jogador, 
+.nome-personagem-maquina {
     position: relative;
     transform: translateY(-492px);
 }
 
-.atributos-jogador {
+.atributos-jogador,
+.atributos-maquina {
     position: relative;
     transform: translateY(-210px);
     list-style: none;

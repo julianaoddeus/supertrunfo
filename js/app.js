@@ -42,18 +42,29 @@ function SortearCarta(){
 
 // Exibir a carta do Jogador e carta Maquina
 function ExibirCartaJogador(){
-    console.log(cartaJogador);
     let divCartaJogador = document.querySelector("#carta-jogador");
     divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
     document.querySelector(".nome-personagem-jogador").innerText = cartaJogador.nome;
 
-    //pegar e listar atributos para
+    //pegar e listar atributos Jogador
     let listaDeAtributosDaCarta = document.querySelector(".atributos-jogador");
     listaDeAtributosDaCarta.innerHTML = PegarAtributos(cartaJogador.atributos);
-    
-    
 }
 
+function ExibirCartaMaquina(){
+    let divCartaMaquina = document.querySelector("#carta-maquina");
+    divCartaMaquina.style.backgroundImage = `url(${cartaMaquina.imagem})`;
+    document.querySelector(".nome-personagem-maquina").innerText = cartaMaquina.nome;
+
+    //pegar e listar atributos Máquina
+    let listaDeAtributosDaCarta = document.querySelector(".atributos-maquina");
+    listaDeAtributosDaCarta.innerHTML = PegarAtributos(cartaMaquina.atributos);
+}
+
+
+function PegarAtributosMaquina(){
+    
+}
 function PegarAtributos(atributosDaCarta){
     let listaDeAtributos = "", botaoRadio="";
     for(let atributo in atributosDaCarta){
@@ -63,13 +74,12 @@ function PegarAtributos(atributosDaCarta){
     return listaDeAtributos;
 }
 
-
-
 // Inserindo evento no botão SORTEAR_CARTA.
 const btnSortear = document.querySelector("#btnSortear");
 btnSortear.onclick = () => {
     SortearCarta();
     ExibirCartaJogador();
+    ExibirCartaMaquina();
     document.querySelector("#btnJogar").disabled = false;
 };
 
