@@ -19,13 +19,33 @@ const batman = {
     }
 }
 
-const cartas = [naruto, batman];
+const darthVader = {
+    nome: "Darth Vader",
+    imagem: "img/darthvader.jpg",
+    atributos: {
+        ataque: 8,
+        defesa: 5,
+        magia: 3
+    }
+}
+
+const harry = {
+    nome: "Harry Potter",
+    imagem: "img/harry.jpg",
+    atributos: {
+        ataque: 6,
+        defesa: 4,
+        magia: 3
+    }
+}
+
+const cartas = [naruto, batman, darthVader, harry];
 let cartaJogador, cartaMaquina;
 
 
 // Criado função de Sortear as cartas
 function SortearCarta(){
-    const numeroDeCartas = 2;
+    const numeroDeCartas = 4;
     let numeroCartaJogador = parseInt(Math.random()*numeroDeCartas);
     let numeroCartaMaquina = parseInt(Math.random()*numeroDeCartas);
     
@@ -63,7 +83,7 @@ function ExibirCartaMaquina(){
 
 
 function PegarAtributosMaquina(){
-    
+
 }
 function PegarAtributos(atributosDaCarta){
     let listaDeAtributos = "", botaoRadio="";
@@ -74,6 +94,19 @@ function PegarAtributos(atributosDaCarta){
     return listaDeAtributos;
 }
 
+function Jogar(){
+    
+}
+
+const btnJogar = document.querySelector("#btnJogar");
+btnJogar.onclick = () => {   
+   
+  
+    // O código desejado é apenas isto:
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("conteudo").style.display = "inline";
+
+}, 4000;
 // Inserindo evento no botão SORTEAR_CARTA.
 const btnSortear = document.querySelector("#btnSortear");
 btnSortear.onclick = () => {
