@@ -23,20 +23,6 @@ body {
     padding: 20px;
 }
 
-
-h1 {
-    font-family: 'MedievalSharp', cursive;
-    color: #802626;
-    font-size: 50px;
-    margin: 30px;
-}
-
-h2 {
-    letter-spacing: 1px;
-    margin: 30px;
-    color: #4d2d2d
-}
-
 button, .btn-jogar {
     text-transform: uppercase;
     font-size: 1rem;
@@ -48,25 +34,67 @@ button, .btn-jogar {
     margin-top:15px
 }
 
+h1 {
+    font-family: 'MedievalSharp', cursive;
+    color: #802626;
+    font-size: 50px;
+    margin: 30px;
+}
 
+h2 {
+    letter-spacing: 1px;
+    margin: 30px;
+    color: #8b0c32;
+    background: #fff;
+}
+
+h3 {
+    color: #222;
+}
 .area {
     display: flex;
     justify-content: center;
     justify-content: space-around;
 }
 #carta-jogador,
-#carta-computador {
+#carta-maquina {
     width: 360px;
-    height:500px;
+    height:515px;
     border-radius:10px;
     margin-bottom: 20px;
     margin-right: auto;
     margin-left: auto;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position-x:5px;
+    background-position-y: 10px;
+    border-radius:33px;
+    
 }
 
 
 #carta-jogador img,
-#carta-computador img {
+#carta-maquina img {
     width: inherit;
     height: inherit;
+
+}
+
+.nome-personagem-jogador {
+    position: relative;
+    transform: translateY(-492px);
+}
+
+.atributos-jogador {
+    position: relative;
+    transform: translateY(-210px);
+    list-style: none;
+    padding: 0;
+}
+
+.versus {
+    font-size:200px;
+    padding-top: 120px;
+    font-family: 'MedievalSharp', cursive;
+    color: #8b0c32;
 }

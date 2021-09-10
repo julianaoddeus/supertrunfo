@@ -16,19 +16,25 @@
             <h2>Escolha a sua habilidade</h2>
             <div class="area">
                 <div class="carta">
-                    <div class="carta-jogador">
+                    <div id="carta-jogador">
                         <img src="img/super-trunfo-transparente.png" alt="">
-                        <h3></h3>
+                        <h3 class="nome-personagem-jogador">BATMAN</h3>
+                        <ul class="atributos-jogador">
+                            <li>Força</li>
+                            <li>Velocidade</li>
+                            <li>Inteligência</li>
+                        </ul>
                     </div>
                 </div>
+                <div class="versus">X</div>
                 <div class="carta">
-                    <div class="carta-computador">
+                    <div id="carta-maquina">
                         <img src="img/super-trunfo-transparente.png" alt="">
-                        <h3></h3>
+                        <h3 class="nome-personagem-maquina"></h3>
                     </div>
                 </div>
             </div>
-            <button class="btn-jogar" id="btnJogar" disabled>Jogar</button>
+            <button class="btn-jogar" id="btnJogar">Jogar</button>
             <div id="resultado"></div>
         </form>
     </div>
